@@ -1,0 +1,4 @@
+HTML is not a programming language
+HTML is a markup language, Hypertext Markup Language to be precise. 
+Markup Language is a text encoding system. It is used to format text and other data for display. ex Markdown
+HyperText is a special type of text document that contains links to other documents. 

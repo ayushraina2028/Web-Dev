@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+<body>
+    <h2>Input Attributes</h2>
+    <p>Here we are going to see different types of attributes that are used in different 
+        input elements.
+    </p>
+    <hr>
+    <div style = 'border: 1px solid black'>
+        <h3>1. Placeholder</h3>
+        <p>This is like a temporary display value. It will help user what kind of value this value
+            input field is expecting from us.
+            When we write some value this value will be vanished
+        </p>
+
+        <h3>2. Value</h3>
+        <p>This is like a initial value that we provide to input field, it acts in different ways depending
+            on what input element we are using.
+            We can say this as default value of a input element in html. When we delete this default
+            value then we will see placeholder data in input field
+        </p>
+    </div>
+    <hr>
+    Here are some examples of place holder and value tags and their differences
+    <br><br>
+    Input Field with placeholder
+    <input type = 'text' placeholder = 'Enter Your Name'><br>
+    Input Field with placeholder and value(default value entered)
+    <input type = 'text' placeholder = 'Enter Your Name' value = 'Ayush Raina'><br>
+    Submit Button without value attribute
+    <input type = 'submit'><br>
+    Submit button with value attribute(User Entered value)
+    <input type = 'submit' value = 'Click Here'>
+
+    <hr>
+    <div style = 'border: 1px solid black'>
+        <h3>3. disabled</h3>
+        <p>We can think this as locking a value for a particular input field. This can be easily bypassed with
+            javascript dom manipulation. But there are more ways by which we can prevent someone to do so.
+        </p>
+            
+    </div>
+    <hr>
+    Here are some examples 
+    <br>
+    1. Submit Button with disabled attribute :- 
+    <input type = 'submit' value = 'Click Me' disabled> <br>
+    2. Input Text field with disabled attribute :- 
+    <input type = 'text' value = 'Ayush Raina' disabled>
+
+    <hr>
+
+    <div style = 'border: 1px solid black'>
+        <h3>4. Name</h3>
+        <p>
+            When we will submit the form, how the receiver will know about particular input fields, For example, there are 2 input fields of type text and one is for name and other is for address and user may put correct details in incorrect one also.
+            For receiver to decide which data belongs to which input field we use name attribute.
+        </p>
+    </div>
+    <hr>
+    Here are some examples <br>
+    1. If we give name = 'firstname' attribute in input tag, then the receiver will know that for user entered value is belongs to input field containing name as firstname.
+    <hr>
+    <div style = 'border: 1px solid green'>
+        <h3>4. min, max, maxlength attribute</h3>
+        <p>
+            These are used to put the constraints on the input fields so that we get required data without any non necessary data.
+        </p>
+    </div>
+        <hr>
+        Here is example discussed below 
+        <br>
+        <form>  
+            Suppose there is a form with number input field with some constraints that value must be in range [10,100]
+            <input type = 'number' placeholder = 'Enter Your Age' min = '10' max = '100'> <br>
+            Suppose there is form with text input field with constraints that length of text must be less than specific number(10)
+            <input type = 'text' placeholder = 'Enter First Name' maxlength="10"> <br>
+            Now if our inputs satisfy the above constraints then only we can submit the form otherwise a popup will appear.
+            <input type = 'submit' value = "Click Here to Submit">
+        </form>
+        <hr>
+        <div style = 'border: 1px solid red'>
+            <h3>
+                5. autofocus and size attribute
+            </h3>
+            <p>
+                When we click any input field, a blue border appears on it, but only when we click it. If we give autofocus in any input field then by default blue border will be there on that input field. Its usecase can be that it shows us starting of the form.
+                <br>
+                Size attribute will help in determining the width of input field
+            </p>
+        </div>
+        <hr>
+        Here is an example discussed below:
+        <form>
+            Name input field with autofocus attribute :-
+            <input type = 'text' placeholder = 'Enter your name' autofocus> <br>
+            
+            Address input field with size attribute(30, means increased width) :-
+            <input type = 'text' placeholder = 'Enter Address' size = '30'>
+        </form>
+    
+</body>
+</html>

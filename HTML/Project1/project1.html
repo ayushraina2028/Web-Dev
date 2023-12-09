@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+    <!-- We want our input fields in center of our page, so we will use input throught tables -->
+    <table align = "center" cellspacing = "5px" cellpadding = "5px">
+        <tbody>
+            <!--Name-->
+            <tr>
+                <td><label for="name">Enter your name: </label></td>
+                <td><input type = 'text', placeholder = 'name' name = 'name' id = 'name'
+                    maxlength="20"></td>
+                <td><p>(Maximum 20 characters allowed)</p></td>
+            </tr>
+
+            <!--DOB-->
+            <tr>
+                <td><label for="dateofbirth">Enter your DOB: </label></td>
+                <td><input type="date" id = "dateofbirth"></td>
+            </tr>
+
+            <!--Email-->
+            <tr>
+                <td><label for="email">Enter your Email address: </label></td>
+                <td><input type="email" placeholder="email" id='email'></td>
+            </tr>
+
+            <!--Mobile Number-->
+            <tr>
+                <td><label for="phonenumber">Enter Mobile Number</label></td>
+                <td><input type="number" id = "phonenumber" maxlength="10"></td>
+                <td><p>(10 digit mobile number without country code)</p></td>
+            </tr>
+
+            <!--Gender-->
+            <tr>
+                <td><label for="gender">Gender: </label></td>
+                <td> Male <input type="radio" name="gender"></td>
+                <td> Female <input type="radio" name="gender"></td>
+            </tr>
+
+            <!-- While sending data to backend name is key value attribute is the value which it receives -->
+
+            <!--Address-->
+            <tr>
+                <td><label for="address">Enter Address: </label></td>
+                <td><textarea name="address" id="address" cols="30" rows="5" placeholder="address"></textarea></td>
+            </tr>
+
+            <!--Pincode-->
+            <tr>
+                <td><label for="pincode">Enter Pincode: </label></td>
+                <td><input type="number" name="pincode" id="pincode" maxlength="6"></td>
+                <td><p>(6 digit code)</p></td>
+            </tr>
+
+            <!--Country: India default-->
+            <tr>
+                <td><label for="country"></label>Country: </td>
+                <td><input type="text" name="country" value="India" id="country"></td>
+            </tr>
+
+            <!--CheckBoxes-->
+            <tr>
+                <td>
+                    <label for="hobbies">Select Hobbies: </label>
+                </td>
+                <td>
+                    Cricket <input type="checkbox" name="hobbies" id="Cricket">
+                    Football <input type="checkbox" name="hobbies" id="Football">
+                    Development <input type="checkbox" name="hobbies" id="Development">
+                </td>
+            </tr>
+
+            <!--Submit and Reset-->
+            <tr>
+                <td><label for="submit">Submit: </label></td>
+                <td><input type="submit" value="Sumbit" id="submit" name="submit"></td>
+                <td><label for="reset">Reset: </label></td>
+                <td><input type="reset" value="Reset" id="reset" name="reset"></td>
+
+                <!--these buttons will work if we add the whole table inside a form-->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
